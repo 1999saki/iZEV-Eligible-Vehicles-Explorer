@@ -55,9 +55,6 @@ izev-explorer/
   <br/>
   <em>Scraper output — follows pagination (1 → Last), parses each table, and saves a consolidated CSV.</em>
 </p>
-
-> If images don’t load on GitHub, make sure you committed them to `assets/` and that the case-sensitive file names match exactly.
-
 ⸻
 
 ⚙️ Setup Instructions
