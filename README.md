@@ -165,15 +165,15 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 ⸻
 
 🧑‍💻 Author
-
-Your Name
+```bash
+Sai Kiran Pilli
 🚗 Electric mobility enthusiast • 🇨🇦 Canada
 💬 Open to ideas, issues, and contributions!
-
+```
 ⸻
-
+```bash
 ⭐ If you found this helpful…
 
 Give it a star on GitHub — it helps more people discover clean, open-source EV data tools!
-
+```
 ⸻
