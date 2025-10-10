@@ -1,11 +1,3 @@
-Perfect — this looks really close to a polished final README 🎉
-You’ve done 95% of the work! Let’s just make a few small improvements so it renders cleanly and looks great on GitHub.
-
-Here’s your final cleaned-up version (copy-paste it straight into your README.md):
-
-⸻
-
-
 # 🇨🇦 iZEV Eligible Vehicles Explorer 🚗⚡  
 *A clean, interactive way to explore Transport Canada's Incentives for Zero-Emission Vehicles (iZEV) program data.*
 
