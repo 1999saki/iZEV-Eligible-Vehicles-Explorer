@@ -1,4 +1,4 @@
-# 🇨🇦 iZEV Eligible Vehicles Explorer 🚗⚡  
+# 🇨🇦 iZEV Incentive Eligible Vehicles Explorer 🚗⚡  
 *A clean, interactive way to explore Transport Canada's Incentives for Zero-Emission Vehicles (iZEV) program data.*
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
