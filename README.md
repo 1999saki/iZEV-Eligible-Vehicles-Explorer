@@ -11,7 +11,6 @@ It reads naturally, feels like a developer wrote it by hand, and is formatted wi
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -155,12 +154,6 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 Your Name
 🚗 Electric-mobility enthusiast • 🇨🇦 Canada
 💬 Open to ideas, issues, and contributions!
-
-⸻
-
-📜 License
-
-This project is licensed under the MIT License — feel free to use and modify with credit.
 
 ⸻
 
