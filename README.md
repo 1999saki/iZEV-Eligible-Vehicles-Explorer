@@ -42,6 +42,24 @@ izev-explorer/
 
 ⸻
 
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="app-ui.png" alt="iZEV Explorer — Streamlit UI" width="90%" />
+  <br/>
+  <em>Interactive Streamlit app with relevant filters, KPI tiles, and a tidy results table.</em>
+</p>
+
+<p align="center">
+  <img src="scraper-log.png" alt="Scraper output showing page-by-page parse and total rows" width="90%" />
+  <br/>
+  <em>Scraper output — follows pagination (1 → Last), parses each table, and saves a consolidated CSV.</em>
+</p>
+
+> If images don’t load on GitHub, make sure you committed them to `assets/` and that the case-sensitive file names match exactly.
+
+⸻
+
 ⚙️ Setup Instructions
 
 1️⃣ Clone the repo
