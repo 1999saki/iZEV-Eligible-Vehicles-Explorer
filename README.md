@@ -1,7 +1,7 @@
-# iZEV-Eligible-Vehicles-Explorer
+Perfect — this looks really close to a polished final README 🎉
+You’ve done 95% of the work! Let’s just make a few small improvements so it renders cleanly and looks great on GitHub.
 
-Perfect 👍 — here’s a GitHub-ready README.md for your project.
-It reads naturally, feels like a developer wrote it by hand, and is formatted with Markdown best practices — including badges, emojis, and example usage.
+Here’s your final cleaned-up version (copy-paste it straight into your README.md):
 
 ⸻
 
@@ -11,12 +11,13 @@ It reads naturally, feels like a developer wrote it by hand, and is formatted wi
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
 ## 🧭 Overview
 
-The **iZEV Explorer** is a small Python + Streamlit web app that lets users **search, filter, and visualize** Canada’s official list of **eligible zero-emission vehicles** under the [Transport Canada iZEV Program](https://tc.canada.ca/en/road-transportation/innovative-technologies/zero-emission-vehicles/incentives-zero-emission-vehicles/eligible-vehicles).
+The **iZEV Explorer** is a lightweight **Python + Streamlit** web app that lets users **search, filter, and visualize** Canada’s official list of **eligible zero-emission vehicles** under the [Transport Canada iZEV Program](https://tc.canada.ca/en/road-transportation/innovative-technologies/zero-emission-vehicles/incentives-zero-emission-vehicles/eligible-vehicles).
 
 It loads a pre-scraped CSV of all eligible vehicles and provides an intuitive dashboard where you can:
 
@@ -28,21 +29,7 @@ It loads a pre-scraped CSV of all eligible vehicles and provides an intuitive da
 
 ---
 
-## 🧱 Project Structure
-
-```bash
-izev-explorer/
-│
-├── scraper.py              # Web scraper (requests + BeautifulSoup)
-├── eligible_vehicles_all_pages.csv  # Saved dataset from the Transport Canada site
-├── app.py                  # Streamlit web app
-├── requirements.txt        # Dependencies
-└── README.md               # You're reading this 🙂
-
-
-⸻
-
-## 🖼️ Screenshots
+🖼️ Screenshots
 
 <p align="center">
   <img src="https://github.com/1999saki/izev-explorer/blob/main/app-ui.png?raw=true" width="90%">
@@ -50,18 +37,37 @@ izev-explorer/
   <em>Interactive Streamlit app — explore, filter, and download eligible vehicle data.</em>
 </p>
 
+
 <p align="center">
   <img src="https://github.com/1999saki/izev-explorer/blob/main/scraper-log.png?raw=true" width="90%">
   <br/>
   <em>Scraper output showing successful pagination and CSV export.</em>
 </p>
+
+⸻
+
+## 🧱 Project Structure
+
+```bash
+izev-explorer/
+├── app.py                          # Streamlit web app
+├── scraper.py                      # Web scraper (requests + BeautifulSoup)
+├── eligible_vehicles_all_pages.csv # Saved dataset from the Transport Canada site
+├── requirements.txt                # Dependencies
+├── app-ui.png                      # App screenshot
+├── scraper-log.png                 # Scraper log screenshot
+└── README.md                       # This file
+
+
+
+
 ⸻
 
 ⚙️ Setup Instructions
 
 1️⃣ Clone the repo
 
-git clone https://github.com/yourusername/izev-explorer.git
+git clone https://github.com/1999saki/izev-explorer.git
 cd izev-explorer
 
 2️⃣ Install dependencies
@@ -87,32 +93,32 @@ Then open http://localhost:8501 in your browser.
 🧮 Features
 
 🔹 Smart Filters
-	•	Make / Model (linked): Model options change based on the selected Make.
+	•	Make / Model (linked): Model options change dynamically.
 	•	Year range slider: Narrow down by model year.
 	•	Fuel type: Filter BEV / PHEV vehicles.
 	•	Eligibility date: Choose a date range using a slider.
 	•	Incentive amount: Range slider for any-term incentives.
-	•	Electric range ≥ 50 km: Toggle to show plug-in hybrids meeting distance criteria.
+	•	Electric range ≥ 50 km: Toggle for qualifying hybrids.
 	•	Free-text search: Search across all columns.
 
 🔹 KPIs
 
-At the top of the app, you’ll see:
+At the top of the app:
 	•	Number of Makes
 	•	Number of Models
 	•	Highest incentive available (any term)
 
 🔹 Data Table
-	•	Paginated, sortable, wide-format display
+	•	Paginated, sortable, clean layout
 	•	Smart column order (Year → Make → Model → Incentives → Date)
 	•	Download filtered data as CSV
 
 🔹 Summary Dashboard
 
-Three tabs with quick insights:
+Three quick insights:
 	1.	Top Makes — counts, models, avg/max incentive
-	2.	Fuel Mix — BEV vs PHEV distribution + bar chart
-	3.	Best Incentives — top 20 vehicles with the highest incentive values
+	2.	Fuel Mix — BEV vs PHEV breakdown
+	3.	Best Incentives — top 20 vehicles by incentive value
 
 ⸻
 
@@ -120,8 +126,8 @@ Three tabs with quick insights:
 
 Layer	Technology	Description
 Frontend / Backend	Streamlit	Interactive UI + server logic
-Data Processing	Pandas	Filtering, aggregations, cleaning
-Scraping	Requests, BeautifulSoup	Extracts paginated data from the Transport Canada site
+Data Processing	Pandas	Filtering, aggregation, cleaning
+Scraping	Requests, BeautifulSoup	Extracts paginated data from Transport Canada
 Visualization	Streamlit built-ins	KPIs + charts
 Data Format	CSV	Single dataset for fast local use
 
@@ -129,21 +135,20 @@ Data Format	CSV	Single dataset for fast local use
 ⸻
 
 🧠 How It Works
-	1.	Scraper crawls all pages of Transport Canada’s ZEV eligibility table.
-It extracts each table, cleans symbols, converts amounts, and saves everything to eligible_vehicles_all_pages.csv.
-	2.	App loads that CSV, detects columns automatically, and builds filters and charts dynamically.
-	3.	Users can explore interactively or download filtered results.
+	1.	Scraper (scraper.py) crawls all iZEV eligibility pages, cleans the tables, and saves the combined dataset to eligible_vehicles_all_pages.csv.
+	2.	App (app.py) loads that CSV, detects relevant columns, and dynamically builds filters and charts.
+	3.	Users interactively explore, visualize, and export results.
 
 ⸻
 
 🚀 Deployment
 
-You can easily host this app on:
-	•	🟢 Streamlit Community Cloud — free & one-click.
-	•	☁️ Google Cloud Run / Heroku / Render — for more control.
-	•	🐳 Docker — build once, run anywhere.
+You can host this app easily on:
+	•	🟢 Streamlit Community Cloud — free and fast
+	•	☁️ Google Cloud Run / Render / Heroku
+	•	🐳 Docker — portable and production-ready
 
-Example Dockerfile snippet:
+Example Dockerfile:
 
 FROM python:3.10-slim
 WORKDIR /app
@@ -156,24 +161,24 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 ⸻
 
 💡 Future Improvements
-	•	🔁 Auto-refresh scraper weekly to stay current
-	•	📈 Trend charts for incentive changes
+	•	🔁 Auto-refresh scraper weekly
+	•	📈 Incentive trend charts
 	•	🧮 Model comparison mode
-	•	🌙 Dark theme + branding (Canada/EV style)
-	•	📤 Export to Excel with formatting
+	•	🌙 Dark theme & Canadian branding
+	•	📤 Excel export with formatting
 
 ⸻
 
 🧑‍💻 Author
 
 Your Name
-🚗 Electric-mobility enthusiast • 🇨🇦 Canada
+🚗 Electric mobility enthusiast • 🇨🇦 Canada
 💬 Open to ideas, issues, and contributions!
 
 ⸻
 
 ⭐ If you found this helpful…
 
-Give it a star on GitHub! It helps more people discover clean, open-source EV data tools.
+Give it a star on GitHub — it helps more people discover clean, open-source EV data tools!
 
----
+⸻
