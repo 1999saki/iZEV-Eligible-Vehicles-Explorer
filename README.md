@@ -3,7 +3,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -40,7 +39,7 @@ It loads a pre-scraped CSV of all eligible vehicles and provides an intuitive da
 
 ## 🧱 Project Structure
 
-```bash
+
 izev-explorer/
 ├── app.py                          # Streamlit web app
 ├── scraper.py                      # Web scraper (requests + BeautifulSoup)
