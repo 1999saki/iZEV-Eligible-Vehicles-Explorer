@@ -55,7 +55,7 @@ izev-explorer/
 ⸻
 
 ⚙️ Setup Instructions
-
+```bash
 1️⃣ Clone the repo
 
 git clone https://github.com/1999saki/izev-explorer.git
@@ -78,11 +78,11 @@ Requirements:
 streamlit run app.py
 
 Then open http://localhost:8501 in your browser.
-
+```
 ⸻
 
 🧮 Features
-
+```bash
 🔹 Smart Filters
 	•	Make / Model (linked): Model options change dynamically.
 	•	Year range slider: Narrow down by model year.
@@ -110,54 +110,58 @@ Three quick insights:
 	1.	Top Makes — counts, models, avg/max incentive
 	2.	Fuel Mix — BEV vs PHEV breakdown
 	3.	Best Incentives — top 20 vehicles by incentive value
+```
 
 ⸻
 
 🧰 Tech Stack
-
+```bash
 Layer	Technology	Description
 Frontend / Backend	Streamlit	Interactive UI + server logic
 Data Processing	Pandas	Filtering, aggregation, cleaning
 Scraping	Requests, BeautifulSoup	Extracts paginated data from Transport Canada
 Visualization	Streamlit built-ins	KPIs + charts
 Data Format	CSV	Single dataset for fast local use
-
+```
 
 ⸻
 
 🧠 How It Works
+```bash
 	1.	Scraper (scraper.py) crawls all iZEV eligibility pages, cleans the tables, and saves the combined dataset to eligible_vehicles_all_pages.csv.
 	2.	App (app.py) loads that CSV, detects relevant columns, and dynamically builds filters and charts.
 	3.	Users interactively explore, visualize, and export results.
-
+```
 ⸻
 
 🚀 Deployment
 
 You can host this app easily on:
+```bash
 	•	🟢 Streamlit Community Cloud — free and fast
 	•	☁️ Google Cloud Run / Render / Heroku
 	•	🐳 Docker — portable and production-ready
+```
 
 Example Dockerfile:
-
+```bash
 FROM python:3.10-slim
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 EXPOSE 8501
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
-
+```
 
 ⸻
-
+```bash
 💡 Future Improvements
 	•	🔁 Auto-refresh scraper weekly
 	•	📈 Incentive trend charts
 	•	🧮 Model comparison mode
 	•	🌙 Dark theme & Canadian branding
 	•	📤 Excel export with formatting
-
+```
 ⸻
 
 🧑‍💻 Author
