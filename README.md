@@ -39,7 +39,7 @@ It loads a pre-scraped CSV of all eligible vehicles and provides an intuitive da
 
 ## 🧱 Project Structure
 
-
+```bash
 izev-explorer/
 ├── app.py                          # Streamlit web app
 ├── scraper.py                      # Web scraper (requests + BeautifulSoup)
@@ -48,7 +48,7 @@ izev-explorer/
 ├── app-ui.png                      # App screenshot
 ├── scraper-log.png                 # Scraper log screenshot
 └── README.md                       # This file
-
+```
 
 
 
