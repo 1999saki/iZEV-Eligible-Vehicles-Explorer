@@ -29,19 +29,18 @@ It loads a pre-scraped CSV of all eligible vehicles and provides an intuitive da
 
 ---
 
-🖼️ Screenshots
+## 🖼️ Screenshots
 
 <p align="center">
-  <img src="https://github.com/1999saki/izev-explorer/blob/main/app-ui.png?raw=true" width="90%">
+  <img src="./app-ui.png" alt="iZEV Explorer — Streamlit UI" width="90%" />
   <br/>
-  <em>Interactive Streamlit app — explore, filter, and download eligible vehicle data.</em>
+  <em>Interactive Streamlit app with relevant filters, KPI tiles, and a tidy results table.</em>
 </p>
 
-
 <p align="center">
-  <img src="https://github.com/1999saki/izev-explorer/blob/main/scraper-log.png?raw=true" width="90%">
+  <img src="./scraper-log.png" alt="Scraper output showing page-by-page parse and total rows" width="90%" />
   <br/>
-  <em>Scraper output showing successful pagination and CSV export.</em>
+  <em>Scraper output — follows pagination (1 → Last), parses each table, and saves a consolidated CSV.</em>
 </p>
 
 ⸻
